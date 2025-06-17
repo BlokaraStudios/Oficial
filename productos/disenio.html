@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Servicios de Diseño</title>
+    <link rel="stylesheet" href="disenio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/disenio.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li id="clientes-link" style="display:none;"><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                    <li id="admin-link" style="display:none;"><a href="../administrador/admin.html"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+                <button id="register-btn" class="btn-register">
+                    <i class="fas fa-user-plus"></i> Registrarse
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="design-header">
+        <div class="header-content">
+            <h1>Diseño Gráfico</h1>
+            <p>Creaciones visuales profesionales para tus proyectos y redes sociales</p>
+        </div>
+    </section>
+
+    <main class="design-main">
+        <!-- Contenido principal -->
+        <section class="design-section">
+            <h2 class="section-title">Nuestros Servicios de Diseño</h2>
+            <div class="design-container">
+                <!-- Anuncio Server -->
+                <div class="design-card">
+                    <div class="design-header">
+                        <h3>Anuncio Server</h3>
+                        <div class="design-price">$4 USD</div>
+                    </div>
+                    <ul class="design-features">
+                        <li><i class="fas fa-check"></i> Diseño personalizado</li>
+                        <li><i class="fas fa-check"></i> Formato para redes sociales</li>
+                        <li><i class="fas fa-check"></i> 1 Revisión</li>
+                        <li><i class="fas fa-check"></i> Entrega en 1-2 días</li>
+                    </ul>
+                    <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Anuncio con Render -->
+                <div class="design-card featured">
+                    <div class="design-badge">Popular</div>
+                    <div class="design-header">
+                        <h3>Anuncio con Render</h3>
+                        <div class="design-price">$6 USD</div>
+                    </div>
+                    <ul class="design-features">
+                        <li><i class="fas fa-check"></i> Todo lo del básico</li>
+                        <li><i class="fas fa-check"></i> Render personalizado</li>
+                        <li><i class="fas fa-check"></i> Efectos visuales avanzados</li>
+                        <li><i class="fas fa-check"></i> 2 Revisiones</li>
+                    </ul>
+                    <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Render Blender -->
+                <div class="design-card">
+                    <div class="design-header">
+                        <h3>Render Blender</h3>
+                        <div class="design-price">$2 USD</div>
+                    </div>
+                    <ul class="design-features">
+                        <li><i class="fas fa-check"></i> Render 3D profesional</li>
+                        <li><i class="fas fa-check"></i> Iluminación personalizada</li>
+                        <li><i class="fas fa-check"></i> Pose a elección</li>
+                        <li><i class="fas fa-check"></i> Formato PNG transparente</li>
+                    </ul>>
+                    <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Necesitas un diseño personalizado?</h2>
+            <p>Contáctanos para crear una solución visual única para tu proyecto</p>
+            <button class="cta-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">
+                <i class="fab fa-discord"></i> Contactar en Discord
+            </button>
+        </section>
+    </main>
+          
+    <footer>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Blokara Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../seguridad/seguridad.js"></script>
+    <script src="../hub/hub.js"></script>
+</body>
+</html>

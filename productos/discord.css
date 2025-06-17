@@ -1,0 +1,465 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #5865F2;
+    --accent-color: #404EED;
+    --text-color: #ffffff;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+    --featured-color: #5865F2;
+    --discord-blurple: #5865F2;
+    --discord-dark: #404EED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===== Estilos del Menú ===== */
+.nav-header {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 0.8rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.2);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, var(--discord-blurple), var(--discord-dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.main-nav a i {
+    font-size: 1rem;
+}
+
+.main-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login, .btn-register {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-login:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(88, 101, 242, 0.3);
+}
+
+.btn-register {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-register:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(88, 101, 242, 0.3);
+}
+
+/* ===== Hero Section ===== */
+.discord-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.discord-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--discord-blurple);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.discord-header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Pestañas de servicios ===== */
+.services-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 0;
+    max-width: 1200px;
+    border-bottom: 2px solid rgba(88, 101, 242, 0.2);
+}
+
+.tab-btn {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--discord-blurple);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--discord-blurple), var(--discord-dark));
+}
+
+.tab-btn:not(.active):hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Contenido de pestañas ===== */
+.plans-section, .servers-section {
+    display: none;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.plans-section.active-tab, .servers-section.active-tab {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--discord-blurple);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--discord-blurple), var(--discord-dark));
+}
+
+/* ===== Plan Cards ===== */
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan-card {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(88, 101, 242, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-card.featured {
+    border: 2px solid var(--discord-blurple);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.2);
+}
+
+.plan-badge {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background-color: var(--discord-blurple);
+    color: #000;
+    padding: 0.3rem 2rem;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.plan-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--discord-blurple);
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.plan-features li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.plan-features i {
+    color: var(--discord-blurple);
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.plan-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(90deg, var(--discord-blurple), var(--discord-dark));
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plan-button:hover {
+    background: linear-gradient(90deg, var(--discord-dark), var(--discord-blurple));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.3);
+}
+
+/* ===== Servers Section ===== */
+.servers-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.server-card {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(88, 101, 242, 0.3);
+}
+
+.server-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.server-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.server-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--discord-blurple);
+}
+
+.server-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.server-features li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.server-features i {
+    color: var(--discord-blurple);
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.server-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(90deg, var(--discord-blurple), var(--discord-dark));
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.server-button:hover {
+    background: linear-gradient(90deg, var(--discord-dark), var(--discord-blurple));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.3);
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--discord-blurple);
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: var(--discord-blurple);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-button:hover {
+    background-color: var(--discord-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+}

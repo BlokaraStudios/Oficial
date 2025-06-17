@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Soporte al Cliente</title>
+    <link rel="stylesheet" href="../productos/minecraft.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/disenio.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                </ul>
+            </nav>
+            <button id="logout-btn" class="btn-login">
+                <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+            </button>
+        </div>
+    </header>
+
+    <main class="client-main">
+        <div class="client-container">
+            <section class="client-section">
+                <h2 class="section-title">Soporte al Cliente</h2>
+                
+                <div class="client-chat">
+                    <div class="chat-header">
+                        <h3>Chat con Soporte</h3>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Mensajes del chat se cargarán aquí -->
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
+                        <label for="fileInput" class="file-btn"><i class="fas fa-paperclip"></i></label>
+                        <input type="file" id="fileInput" style="display: none;">
+                        <button id="sendMessageBtn" class="client-btn">Enviar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="chat.js"></script>
+</body>
+</html>

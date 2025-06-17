@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Hub</title>
+    <link rel="stylesheet" href="../hub/hub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/disenio.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li id="clientes-link" style="display:none;"><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                    <li id="admin-link" style="display:none;"><a href="../administrador/admin.html"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+                <button id="register-btn" class="btn-register">
+                    <i class="fas fa-user-plus"></i> Registrarse
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-grid">
+            <!-- Frases rotatorias -->
+            <div class="hero-content">
+                <div class="tagline">
+                    <span class="tag">PROFESIONAL</span>
+                    <span class="tag">GARANTIZADO</span>
+                    <span class="tag">PREMIUM</span>
+                </div>
+                <h1 class="rotating-text">Tu Proyecto,<br>Tu Visión,<br>Nuestra Experiencia</h1>
+                <p class="hero-description">Transformamos tus ideas en realidades digitales con soluciones personalizadas y de alta calidad.</p>
+                
+                <div class="hero-buttons">
+                    <button id="comprar-btn" class="btn-primary">
+                        <i class="fas fa-shopping-cart"></i> COMPRAR AHORA
+                    </button>
+                    <button id="discord-btn" class="btn-secondary">
+                        <i class="fab fa-discord"></i> ÚNETE A DISCORD
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Tarjetas de características -->
+            <div class="hero-features">
+                <div class="feature-card card-guarantee">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Servicios 100% Garantizados</h3>
+                    <p>Confianza, compromiso y resultados comprobados con garantía de satisfacción.</p>
+                    <div class="pulse-dot"></div>
+                </div>
+                
+                <div class="feature-card card-quality">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                    <p>Excelencia en cada detalle con los más altos estándares de calidad.</p>
+                    <div class="pulse-dot"></div>
+                </div>
+                
+                <div class="feature-card card-team">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Equipo Élite</h3>
+                    <p>Profesionales certificados en cada área de desarrollo.</p>
+                    <div class="pulse-dot"></div>
+                </div>
+                
+                <div class="feature-card card-security">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Protección S4F</h3>
+                    <p>Seguridad de nivel empresarial para todos tus proyectos.</p>
+                    <div class="pulse-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Project Section -->
+    <section class="start-project">
+        <div class="section-header">
+            <h2>EMPIEZA TU PROYECTO</h2>
+            <div class="divider"></div>
+            <p>Con nuestro equipo de profesionales en desarrollo web, Minecraft y Discord, tu visión está en las mejores manos.</p>
+        </div>
+        
+        <div class="project-showcase">
+            <div class="project-item">
+                <img src="https://i.pinimg.com/736x/ad/b6/c4/adb6c456c940f8313479f7cc37ebaa34.jpg" alt="Minecraft Build">
+                <div class="project-overlay">
+                    <h3>MINECRAFT</h3>
+                    <p>Configuraciones y builds profesionales</p>
+                    <button class="btn-overlay">Ver Servicios</button>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <img src="https://i.pinimg.com/736x/6a/e2/2c/6ae22c51424ed98622e0187dc7ae1801.jpg" alt="Web Design">
+                <div class="project-overlay">
+                    <h3>DESARROLLO WEB</h3>
+                    <p>Sitios web a medida y optimizados</p>
+                    <button class="btn-overlay">Ver Servicios</button>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <img src="https://i.pinimg.com/736x/ef/66/91/ef66917221003a7a08a6a5a1ed10f041.jpg" alt="Discord Bot">
+                <div class="project-overlay">
+                    <h3>DISCORD</h3>
+                    <p>Bots y servidores personalizados</p>
+                    <button class="btn-overlay">Ver Servicios</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="section-header dark">
+            <h2>¿POR QUÉ ELEGIRNOS?</h2>
+            <div class="divider"></div>
+            <p>Compara nuestras ventajas competitivas y descubre por qué somos la mejor opción</p>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="studio-comparison">
+                <!-- Blokara Studios -->
+                <div class="studio-card blokara-card">
+                    <div class="studio-header">
+                        <div class="studio-logo">
+                            <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Logo">
+                        </div>
+                        <h3>BLOKARA STUDIOS</h3>
+                        <div class="price-range">
+                            <span>DESDE $1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="studio-features">
+                        <div class="feature-item">
+                            <span class="feature-name">Soporte</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 85%; background: linear-gradient(90deg, #ff0000, #990000);"></div>
+                                <span class="percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <span class="feature-name">Productos</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 85%; background: linear-gradient(90deg, #ff0000, #990000);"></div>
+                                <span class="percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <span class="feature-name">Calidad</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 100%; background: linear-gradient(90deg, #ff0000, #990000);"></div>
+                                <span class="percentage">100%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <span class="feature-name">Precios</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 40%; background: linear-gradient(90deg, #ff0000, #990000);"></div>
+                                <span class="percentage">40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>WBS</span>
+                            <span>$3</span>
+                        </div>
+                        <div class="price-item">
+                            <span>S4F</span>
+                            <span>$1</span>
+                        </div>
+                        <div class="price-item">
+                            <span>BOTS</span>
+                            <span>$2</span>
+                        </div>
+                        <div class="price-item">
+                            <span>SRVDC</span>
+                            <span>$2</span>
+                        </div>
+                        <div class="price-item">
+                            <span>SRVMC</span>
+                            <span>$6</span>
+                        </div>
+                        <div class="price-item">
+                            <span>BUILDS</span>
+                            <span>$5</span>
+                        </div>
+                        <div class="price-item">
+                            <span>DISEÑO</span>
+                            <span>$4</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- VS Badge -->
+                <div class="vs-badge">
+                    <span>VS</span>
+                </div>
+                
+                <!-- Drem Studios -->
+                <div class="studio-card drem-card">
+                    <div class="studio-header">
+                        <div class="studio-logo">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <h3>DREM STUDIOS</h3>
+                        <div class="price-range">
+                            <span>DESDE $1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="studio-features">
+                        <div class="feature-item">
+                            <span class="feature-name">Soporte</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 80%; background: linear-gradient(90deg, #666, #333);"></div>
+                                <span class="percentage">80%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <span class="feature-name">Productos</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 50%; background: linear-gradient(90deg, #666, #333);"></div>
+                                <span class="percentage">50%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <span class="feature-name">Calidad</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 45%; background: linear-gradient(90deg, #666, #333);"></div>
+                                <span class="percentage">45%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <span class="feature-name">Precios</span>
+                            <div class="feature-bar">
+                                <div class="progress-bar" style="width: 90%; background: linear-gradient(90deg, #666, #333);"></div>
+                                <span class="percentage">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>BOTS</span>
+                            <span>$1</span>
+                        </div>
+                        <div class="price-item">
+                            <span>SRVDC</span>
+                            <span>$1</span>
+                        </div>
+                        <div class="price-item">
+                            <span>SRVMC</span>
+                            <span>$5</span>
+                        </div>
+                        <div class="price-item">
+                            <span>DISEÑO</span>
+                            <span>$4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Logo">
+                    <span>BLOKARA STUDIOS</span>
+                </div>
+                <p>Soluciones profesionales de desarrollo web, Minecraft y Discord con calidad premium y soporte garantizado.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../productos/webs.html">Servicios Web</a></li>
+                    <li><a href="../productos/minecraft.html">Servicios Minecraft</a></li>
+                    <li><a href="../productos/discord.html">Servicios Discord</a></li>
+                    <li><a href="../productos/diseno.html">Diseño Gráfico</a></li>
+                    <li><a href="../seguridad/soporte.html">Soporte Técnico</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> blokarastudios@gmail.com</li>
+                    <li><i class="fab fa-discord"></i> discord.gg/blokara</li>
+                </ul>
+                
+                <div class="social-links">
+                <a href="https://discord.com/channels/1372703053618217052/1372703054188511326" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://x.com/blokarastudios" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@blokara_studio" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@blokara_studio" target="_blank"><i class="fab fa-youtube"></i></a>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; 2025 Blokara Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../hub/hub.js"></script>
+    <script src="../seguridad/seguridad.js"></script>
+</body>
+</html>

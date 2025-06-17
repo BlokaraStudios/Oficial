@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Servicios Minecraft</title>
+    <link rel="stylesheet" href="../productos/minecraft.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/disenio.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li id="clientes-link" style="display:none;"><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                    <li id="admin-link" style="display:none;"><a href="../administrador/admin.html"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+                <button id="register-btn" class="btn-register">
+                    <i class="fas fa-user-plus"></i> Registrarse
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="minecraft-header">
+        <div class="header-content">
+            <h1>Servicios Minecraft</h1>
+            <p>Configuraciones profesionales y builds de calidad para tu servidor</p>
+        </div>
+    </section>
+
+    <main class="minecraft-main">
+        <!-- Pestañas de navegación -->
+        <div class="services-tabs">
+            <button class="tab-btn active" id="config-tab">Configuración</button>
+            <button class="tab-btn" id="builds-tab">Builds</button>
+            <button class="tab-btn" id="design-tab">Diseño MC</button>
+        </div>
+
+        <!-- Contenido de Configuración -->
+        <section class="plans-section active-tab" id="config-content">
+            <h2 class="section-title">Configuración de Servidores</h2>
+            <div class="plans-container">
+                <!-- Plan Simple -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Simple</h3>
+                        <div class="plan-price">$6 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Instalación de Plugins (Máx. 5)</li>
+                        <li><i class="fas fa-check"></i> Configuración Básica de Permisos</li>
+                        <li><i class="fas fa-check"></i> Traducción de Plugin Simple (2)</li>
+                        <li><i class="fas fa-check"></i> Configuración de Hologramas</li>
+                        <li><i class="fas fa-check"></i> Compatibilidad De Versiones</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-header">
+                        <h3>Plan Pro</h3>
+                        <div class="plan-price">$12 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Todo el plan Simple</li>
+                        <li><i class="fas fa-check"></i> Hasta 10 plugins configurados</li>
+                        <li><i class="fas fa-check"></i> Sistema de rangos con permisos</li>
+                        <li><i class="fas fa-check"></i> Configurar ScoreBoard</li>
+                        <li><i class="fas fa-check"></i> Protección Básica</li>
+                        <li><i class="fas fa-check"></i> Configuración de Comandos</li>
+                        <li><i class="fas fa-check"></i> Optimización básica</li>
+                        <li><i class="fas fa-check"></i> Traducción (Máx. 10 Plugins)</li>
+                        <li><i class="fas fa-check"></i> Compatibilidad De Versiones</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Max -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Max</h3>
+                        <div class="plan-price">$20 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Todo lo del Plan Pro +</li>
+                        <li><i class="fas fa-check"></i> Hasta 20 plugins</li>
+                        <li><i class="fas fa-check"></i> Configuración de Menús</li>
+                        <li><i class="fas fa-check"></i> Configuración de /shop</li>
+                        <li><i class="fas fa-check"></i> Compatibilidad entre versiones</li>
+                        <li><i class="fas fa-check"></i> Optimización Mejorada</li>
+                        <li><i class="fas fa-check"></i> Soporte Post-Entrega (3 días)</li>
+                        <li><i class="fas fa-check"></i> Traducción (Máx. 20 Plugins)</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido de Builds -->
+        <section class="plans-section" id="builds-content">
+            <h2 class="section-title">Builds Minecraft</h2>
+            <div class="plans-container">
+                <!-- Plan Starter -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Starter</h3>
+                        <div class="plan-price">$5 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Construcciones Simples (Máx. 3)</li>
+                        <li><i class="fas fa-check"></i> Tamaño Máximo 50x50</li>
+                        <li><i class="fas fa-check"></i> Estilo a Elección</li>
+                        <li><i class="fas fa-check"></i> 2 Revisiones</li>
+                        <li><i class="fas fa-check"></i> Decoración Exterior</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Recomendado</div>
+                    <div class="plan-header">
+                        <h3>Plan Pro</h3>
+                        <div class="plan-price">$10 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Todo lo del Starter</li>
+                        <li><i class="fas fa-check"></i> + Construcción Pro (Máx. 2)</li>
+                        <li><i class="fas fa-check"></i> Tamaño Máximo 70x70</li>
+                        <li><i class="fas fa-check"></i> Decoración Interior/Exterior</li>
+                        <li><i class="fas fa-check"></i> Detalles Visuales</li>
+                        <li><i class="fas fa-check"></i> Texturizado Simple</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Max -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Max</h3>
+                        <div class="plan-price">$15 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Todo lo del Pro</li>
+                        <li><i class="fas fa-check"></i> Construcción Max (Máx. 2)</li>
+                        <li><i class="fas fa-check"></i> Tamaño máximo 100x100</li>
+                        <li><i class="fas fa-check"></i> Detalles Avanzados</li>
+                        <li><i class="fas fa-check"></i> Texturizado Avanzado</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+                <!-- Diseño Minecraft -->
+                <div class="design-category">
+                    <h3 class="category-title">Diseño Minecraft</h3>
+                    <div class="design-plans">
+                        <div class="design-card">
+                            <h4>Logo Minecraft</h4>
+                            <div class="design-price">$2.50 USD</div>
+                            <ul class="design-features">
+                                <li><i class="fas fa-check"></i> Logotipo, imagotipo, isologo o isotipo</li>
+                                <li><i class="fas fa-check"></i> Colores personalizados</li>
+                                <li><i class="fas fa-check"></i> Diseño estético</li>
+                                <li><i class="fas fa-check"></i> 1 Revisión</li>
+                                <li><i class="fas fa-check"></i> Tiempo de entrega: 1.5 días</li>
+                            </ul>
+                            <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                        </div>
+
+                        <div class="design-card">
+                            <h4>Logo Profesional</h4>
+                            <div class="design-price">$2.50 USD</div>
+                            <ul class="design-features">
+                                <li><i class="fas fa-check"></i> Logotipo, imagotipo, isologo o isotipo</li>
+                                <li><i class="fas fa-check"></i> Colores personalizados</li>
+                                <li><i class="fas fa-check"></i> Diseño estético</li>
+                                <li><i class="fas fa-check"></i> 2 Revisiones</li>
+                                <li><i class="fas fa-check"></i> Tiempo de entrega: 1.5 días</li>
+                            </ul>
+                            <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                        </div>
+
+                        <div class="design-card">
+                            <h4>Banner Minecraft Básico</h4>
+                            <div class="design-price">$6 USD</div>
+                            <ul class="design-features">
+                                <li><i class="fas fa-check"></i> Diseño profesional</li>
+                                <li><i class="fas fa-check"></i> Colores personalizados</li>
+                                <li><i class="fas fa-check"></i> Fuente de texto de Minecraft</li>
+                                <li><i class="fas fa-check"></i> Hasta 2 revisiones</li>
+                                <li><i class="fas fa-check"></i> 1 render personalizable</li>
+                                <li><i class="fas fa-check"></i> Tiempo de entrega: 2 días</li>
+                            </ul>
+                            <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                        </div>
+
+                        <div class="design-card">
+                            <h4>Banner Minecraft Extreme</h4>
+                            <div class="design-price">$9 USD</div>
+                            <ul class="design-features">
+                                <li><i class="fas fa-check"></i> Diseño profesional</li>
+                                <li><i class="fas fa-check"></i> Colores personalizados</li>
+                                <li><i class="fas fa-check"></i> Fuente de texto de preferencia</li>
+                                <li><i class="fas fa-check"></i> Hasta 4 revisiones</li>
+                                <li><i class="fas fa-check"></i> Incluye 2 renders personalizables</li>
+                                <li><i class="fas fa-check"></i> Tiempo de entrega: 1 día</li>
+                            </ul>
+                            <button class="design-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Necesitas un servicio personalizado?</h2>
+            <p>Contáctanos para crear una solución a medida para tu servidor Minecraft</p>
+            <button class="cta-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">
+                <i class="fab fa-discord"></i> Contactar en Discord
+            </button>
+        </section>
+    </main>
+          
+        <div class="footer-copyright">
+            <p>&copy; 2025 Blokara Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../seguridad/seguridad.js"></script>
+    <script src="../hub/hub.js"></script>
+    <script>
+        // Control de pestañas
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = {
+                'config-tab': 'config-content',
+                'builds-tab': 'builds-content',
+                'design-tab': 'design-content'
+            };
+
+            for (const [tabId, contentId] of Object.entries(tabs)) {
+                document.getElementById(tabId).addEventListener('click', function() {
+                    // Desactivar todas las pestañas
+                    document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.plans-section, .design-section').forEach(c => c.classList.remove('active-tab'));
+                    
+                    // Activar la pestaña seleccionada
+                    this.classList.add('active');
+                    document.getElementById(contentId).classList.add('active-tab');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

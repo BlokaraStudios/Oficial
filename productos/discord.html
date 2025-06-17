@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Servicios Discord</title>
+    <link rel="stylesheet" href="../productos/discord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/disenio.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li id="clientes-link" style="display:none;"><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                    <li id="admin-link" style="display:none;"><a href="../administrador/admin.html"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+                <button id="register-btn" class="btn-register">
+                    <i class="fas fa-user-plus"></i> Registrarse
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="discord-header">
+        <div class="header-content">
+            <h1>Servicios Discord</h1>
+            <p>Bots personalizados y servidores configurados profesionalmente para tu comunidad</p>
+        </div>
+    </section>
+
+    <main class="discord-main">
+        <!-- Pestañas de navegación -->
+        <div class="services-tabs">
+            <button class="tab-btn active" id="bots-tab">Bots Discord</button>
+            <button class="tab-btn" id="servers-tab">Servidores</button>
+        </div>
+
+        <!-- Contenido de Bots Discord -->
+        <section class="plans-section active-tab" id="bots-content">
+            <h2 class="section-title">Bots Discord Personalizados</h2>
+            <div class="plans-container">
+                <!-- Plan Starter -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Starter</h3>
+                        <div class="plan-price">$2 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> +1 Función automática</li>
+                        <li><i class="fas fa-check"></i> 1 Comando a Elección</li>
+                        <li><i class="fas fa-check"></i> Prefijo o Slash Commands</li>
+                        <li><i class="fas fa-check"></i> 1 Revisión o Ajuste</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-header">
+                        <h3>Plan Pro</h3>
+                        <div class="plan-price">$5 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Todo lo del Starter</li>
+                        <li><i class="fas fa-check"></i> 3-5 Comandos Personalizados</li>
+                        <li><i class="fas fa-check"></i> Sistema de Embeds</li>
+                        <li><i class="fas fa-check"></i> Autoroles</li>
+                        <li><i class="fas fa-check"></i> Bienvenidas/Despedidas</li>
+                        <li><i class="fas fa-check"></i> Hasta 3 Revisiones</li>
+                        <li><i class="fas fa-check"></i> Anti Spam/Flood</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Max -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Max</h3>
+                        <div class="plan-price">$10 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Todo el Pro+</li>
+                        <li><i class="fas fa-check"></i> 6-10 Comandos Personalizados</li>
+                        <li><i class="fas fa-check"></i> Sistema de Moderación</li>
+                        <li><i class="fas fa-check"></i> Anti-Raid Simple</li>
+                        <li><i class="fas fa-check"></i> Sistema de Tickets</li>
+                        <li><i class="fas fa-check"></i> Sistema de Logs</li>
+                        <li><i class="fas fa-check"></i> Comandos de moderación</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido de Servidores Discord -->
+        <section class="servers-section" id="servers-content">
+            <h2 class="section-title">Servidores Discord</h2>
+            <div class="servers-container">
+                <!-- Plan Simple -->
+                <div class="server-card">
+                    <div class="server-header">
+                        <h3>Plan Simple</h3>
+                        <div class="server-price">$2 USD</div>
+                    </div>
+                    <ul class="server-features">
+                        <li><i class="fas fa-check"></i> Estructura básica de canales</li>
+                        <li><i class="fas fa-check"></i> Categorías organizadas</li>
+                        <li><i class="fas fa-check"></i> Roles con permisos básicos</li>
+                        <li><i class="fas fa-check"></i> Emojis personalizados</li>
+                        <li><i class="fas fa-check"></i> Diseño estético simple</li>
+                    </ul>
+                    <button class="server-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="server-card featured">
+                    <div class="plan-badge">Recomendado</div>
+                    <div class="server-header">
+                        <h3>Plan Pro</h3>
+                        <div class="server-price">$5 USD</div>
+                    </div>
+                    <ul class="server-features">
+                        <li><i class="fas fa-check"></i> Todo lo del Plan Simple +</li>
+                        <li><i class="fas fa-check"></i> Diseño profesional</li>
+                        <li><i class="fas fa-check"></i> Roles por colores/niveles</li>
+                        <li><i class="fas fa-check"></i> Bots instalados</li>
+                        <li><i class="fas fa-check"></i> Sistema de verificación</li>
+                        <li><i class="fas fa-check"></i> Sistema Anti Raid</li>
+                        <li><i class="fas fa-check"></i> Hasta 2 revisiones</li>
+                    </ul>
+                    <button class="server-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Necesitas un servicio personalizado?</h2>
+            <p>Contáctanos para crear una solución a medida para tu servidor Discord</p>
+            <button class="cta-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">
+                <i class="fab fa-discord"></i> Contactar en Discord
+            </button>
+        </section>
+    </main>
+          
+    <footer>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Blokara Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../seguridad/seguridad.js"></script>
+    <script src="../hub/hub.js"></script>
+    <script>
+        // Control de pestañas
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = {
+                'bots-tab': 'bots-content',
+                'servers-tab': 'servers-content'
+            };
+
+            for (const [tabId, contentId] of Object.entries(tabs)) {
+                document.getElementById(tabId).addEventListener('click', function() {
+                    // Desactivar todas las pestañas
+                    document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.plans-section, .servers-section').forEach(c => c.classList.remove('active-tab'));
+                    
+                    // Activar la pestaña seleccionada
+                    this.classList.add('active');
+                    document.getElementById(contentId).classList.add('active-tab');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

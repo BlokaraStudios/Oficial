@@ -1,0 +1,137 @@
+.soporte-main {
+    margin-top: 80px;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.soporte-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.soporte-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.soporte-form {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.soporte-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.soporte-btn:hover {
+    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.soporte-btn:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.mensaje-exito {
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mensaje-exito i {
+    font-size: 3rem;
+    color: #00AA00;
+}
+
+.mensaje-exito p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+/* Spinner para el botón de enviar */
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

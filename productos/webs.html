@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Servicios Web</title>
+    <link rel="stylesheet" href="../productos/webs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/disenio.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li id="clientes-link" style="display:none;"><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                    <li id="admin-link" style="display:none;"><a href="../administrador/admin.html"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+                <button id="register-btn" class="btn-register">
+                    <i class="fas fa-user-plus"></i> Registrarse
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="webs-header">
+        <div class="header-content">
+            <h1>Desarrollo Web Profesional</h1>
+            <p>Soluciones a medida para tu presencia online con diseños impactantes y máxima seguridad</p>
+        </div>
+    </section>
+
+    <main class="webs-main">
+        <!-- Pestañas de navegación -->
+        <div class="services-tabs">
+            <button class="tab-btn active" id="webs-tab">Webs Servicios</button>
+            <button class="tab-btn" id="security-tab">S4F Security</button>
+        </div>
+
+        <!-- Contenido de Webs Servicios -->
+        <section class="plans-section active-tab" id="webs-content">
+            <div class="plans-container">
+                <!-- Plan Starter -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Starter</h3>
+                        <div class="plan-price">$3 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Máximo 2 Páginas</li>
+                        <li><i class="fas fa-check"></i> Diseño Simple</li>
+                        <li><i class="fas fa-check"></i> 1 Revisión Gratuita</li>
+                        <li><i class="fas fa-check"></i> Entrega en 1 a 3 Días</li>
+                        <li><i class="fas fa-check"></i> Resolución Básica (720P)</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-header">
+                        <h3>Plan Pro</h3>
+                        <div class="plan-price">$7 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Máximo 5 Páginas</li>
+                        <li><i class="fas fa-check"></i> GIFS/Videos Incluidos</li>
+                        <li><i class="fas fa-check"></i> 2 Revisiones Gratuitas</li>
+                        <li><i class="fas fa-check"></i> 1 Cambio Gratis</li>
+                        <li><i class="fas fa-check"></i> Entrega en 1 a 3 Días</li>
+                        <li><i class="fas fa-check"></i> Resolución Pro (1080P)</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+
+                <!-- Plan Max -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plan Max</h3>
+                        <div class="plan-price">$10 USD</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Máximo 10 Páginas</li>
+                        <li><i class="fas fa-check"></i> GIFS/Videos Incluidos</li>
+                        <li><i class="fas fa-check"></i> 3 Revisiones Gratuitas</li>
+                        <li><i class="fas fa-check"></i> 1 Cambio Gratis</li>
+                        <li><i class="fas fa-check"></i> Optimización para PC y Móvil</li>
+                        <li><i class="fas fa-check"></i> Entrega de 1 a 5 Días</li>
+                        <li><i class="fas fa-check"></i> Resolución Pro+ (1080P - 2K)</li>
+                        <li><i class="fas fa-check"></i> Sonidos Integrados</li>
+                        <li><i class="fas fa-check"></i> +1 Animación</li>
+                    </ul>
+                    <button class="plan-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido de S4F Security -->
+        <section class="security-section" id="security-content">
+            <div class="security-plans">
+                <!-- Starter Security -->
+                <div class="security-card">
+                    <div class="security-header">
+                        <h3>Starter Security</h3>
+                        <div class="security-price">+$1 extra</div>
+                    </div>
+                    <ul class="security-features">
+                        <li><i class="fas fa-shield-alt"></i> Protección básica contra XSS</li>
+                        <li><i class="fas fa-eye-slash"></i> Eliminación de errores visibles</li>
+                        <li><i class="fas fa-lock"></i> Prevención de leaks básicos</li>
+                    </ul>
+                </div>
+
+                <!-- Pro Security -->
+                <div class="security-card">
+                    <div class="security-header">
+                        <h3>Pro Security</h3>
+                        <div class="security-price">+$3 extra</div>
+                    </div>
+                    <ul class="security-features">
+                        <li><i class="fas fa-database"></i> Protección contra SQLi</li>
+                        <li><i class="fas fa-headers"></i> Headers de seguridad</li>
+                        <li><i class="fas fa-lock"></i> Enlace forzado a HTTPS</li>
+                        <li><i class="fas fa-code"></i> X-Content-Type-Options</li>
+                    </ul>
+                </div>
+
+                <!-- Max Security -->
+                <div class="security-card">
+                    <div class="security-header">
+                        <h3>Max Security</h3>
+                        <div class="security-price">+$4 extra</div>
+                    </div>
+                    <ul class="security-features">
+                        <li><i class="fas fa-shield-virus"></i> Content Security Policy (Básico)</li>
+                        <li><i class="fas fa-user-secret"></i> Protección contra CSRF</li>
+                        <li><i class="fas fa-search"></i> Escaneo inicial con SecurityHeaders</li>
+                        <li><i class="fas fa-bug"></i> Análisis de vulnerabilidades básico</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Necesitas algo personalizado?</h2>
+            <p>Contáctanos para un presupuesto a medida según tus requerimientos específicos</p>
+            <button class="cta-button" onclick="window.open('https://discord.com/channels/1372703053618217052/1372703055757447245', '_blank')">
+                <i class="fab fa-discord"></i> Contactar en Discord
+            </button>
+        </section>
+    </main>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 Blokara Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../seguridad/seguridad.js"></script>
+    <script src="../hub/hub.js"></script>
+    <script>
+        // Control de pestañas
+        document.addEventListener('DOMContentLoaded', function() {
+            const websTab = document.getElementById('webs-tab');
+            const securityTab = document.getElementById('security-tab');
+            const websContent = document.getElementById('webs-content');
+            const securityContent = document.getElementById('security-content');
+            
+            websTab.addEventListener('click', function() {
+                websTab.classList.add('active');
+                securityTab.classList.remove('active');
+                websContent.classList.add('active-tab');
+                securityContent.classList.remove('active-tab');
+            });
+            
+            securityTab.addEventListener('click', function() {
+                securityTab.classList.add('active');
+                websTab.classList.remove('active');
+                securityContent.classList.add('active-tab');
+                websContent.classList.remove('active-tab');
+            });
+        });
+    </script>
+</body>
+</html>

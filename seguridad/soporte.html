@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokara Studios - Soporte</title>
+    <link rel="stylesheet" href="../productos/minecraft.css">
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://media.discordapp.net/attachments/1381802062186287255/1383584492517593321/descarga_1.png" alt="Blokara Studios Logo">
+                <span class="logo-text">BLOKARA STUDIOS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../productos/webs.html"><i class="fas fa-globe"></i> Webs</a></li>
+                    <li><a href="../productos/minecraft.html"><i class="fas fa-cube"></i> Minecraft</a></li>
+                    <li><a href="../productos/discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="../productos/diseno.html"><i class="fas fa-paint-brush"></i> Diseño</a></li>
+                    <li><a href="../seguridad/soporte.html"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li id="clientes-link" style="display:none;"><a href="../clientes/chat.html"><i class="fas fa-user-tie"></i> Clientes</a></li>
+                    <li id="admin-link" style="display:none;"><a href="../administrador/admin.html"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+                <button id="register-btn" class="btn-register">
+                    <i class="fas fa-user-plus"></i> Registrarse
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="soporte-header">
+        <div class="header-content">
+            <h1>Soporte Técnico</h1>
+            <p>Estamos aquí para ayudarte con cualquier problema o consulta que tengas</p>
+        </div>
+    </section>
+
+    <main class="soporte-main">
+        <div class="soporte-container">
+            <section class="soporte-section">
+                <h2 class="section-title">Contacta con Soporte</h2>
+                
+                <form id="soporteForm" class="soporte-form">
+                    <div class="form-group">
+                        <label for="email">Dirección Gmail*</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@gmail.com">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                            <div class="error-message" id="nombreError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido (opcional)</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto*</label>
+                        <input type="text" id="asunto" name="asunto" required placeholder="¿Cómo podemos ayudarte?">
+                        <div class="error-message" id="asuntoError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="descripcion">Descripción*</label>
+                        <textarea id="descripcion" name="descripcion" required rows="5" placeholder="Describe tu problema o consulta en detalle..."></textarea>
+                        <div class="error-message" id="descripcionError"></div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="soporte-btn" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Enviar Reporte
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="mensajeExito" class="mensaje-exito" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Tu reporte ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.</p>
+                    <button id="nuevoReporteBtn" class="soporte-btn">
+                        <i class="fas fa-plus"></i> Crear nuevo reporte
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="soporte.js"></script>
+</body>
+</html>
