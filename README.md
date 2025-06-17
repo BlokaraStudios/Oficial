@@ -1,2 +1,0 @@
-# Oficial
-Blokara
